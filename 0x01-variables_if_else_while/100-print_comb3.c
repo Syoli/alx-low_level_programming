@@ -24,8 +24,8 @@ int main(void)
 
 	if (k < j)
 {
-putchar(k + '0');	
-putchar(j + '0');
+                             putchar(k + 01);	
+                             putchar(j + 10);
 
 		if (i < 89)
 		{
