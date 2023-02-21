@@ -1,18 +1,15 @@
 #include <stdio.h>
-#include <stdlib.h>
-
 /**
- * main - main entry
- * Discription:function that prints the alphabet, in lowercase.
- * Return: Always 0 (success)
+ * print_alphabet - prints the english alphabet from a-z.
+ * Return: Nothing.
  */
-int main print_alphabet(void);
+void print_alphabet(void)
 {
-	char {a..z}
-	_putchar [[alphabet]];
-	return (0);
-}
-int main(void)
-{
-	printf("alphabet");
+	char c;
+
+	for (c = 'a'; c <= 'z'; c++)
+	{
+		_putchar(c);
+	}
+	_putchar('\n');
 }
