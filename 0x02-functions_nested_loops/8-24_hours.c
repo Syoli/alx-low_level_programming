@@ -1,28 +1,32 @@
-#include <stdio.h>
-#include <main.h>
+#include "main.h"
+
 /**
-* print_to_98 - prints all natural numbers
-* from n to 98, followed by a new line
+* jack_bauer - prints every minute of the day
 *
-* @n: input number.
-*
-* Return: no return.
+* Return: no return
 */
-void print_to_98(int n)
+void jack_bauer(void)
 {
-	if (n > 98)
+	int a, b, c, d;
+
+	for (a = 48; a <= 50; a++)
 	{
-	for (; n > 98; n--)
+		for (b = 48; b <= 57; b++)
 		{
-		printf("%d, ", n);
+			for (c = 48; c <= 53; c++)
+			{
+				for (d = 48; d <= 57; d++)
+				{
+					if (a >= 50 && b >= 52)
+					break;
+					_putchar(a);
+					_putchar(b);
+					_putchar(58);
+					_putchar(c);
+					_putchar(d);
+					_putchar('\n');
+				}
+			}
 		}
 	}
-	else if (n < 98)
-	{
-		for (; n < 98; n++)
-		{
-		printf("%d, ", n);
-		}
-	}
-	printf("%d\n", n);
 }
