@@ -1,22 +1,15 @@
-#include <stdio.h>
-/**/
-/** description: Write a function that swaps the values of two integers.
-**
+#include<stdio.h>
+#include "main.h"
+/**
+*swap_int - swaps the values of two integers.
+*@a: value to be evaluate.
+*@b: value to be evaluate.
+*Return: not.
+*/
+void swap_int(int *a, int *b)
+{
 
-int void swapIntegers(int* a, int* b) {
-    int temp = *a;
-    *a = *b;
-    *b = temp;
-}
-int main() {
-    int num1 = 10;
-    int num2 = 20;
-
-    printf("Before swapping: num1 = %d, num2 = %d\n", num1, num2);
-
-    swapIntegers(&num1, &num2);
-
-    printf("After swapping: num1 = %d, num2 = %d\n", num1, num2);
-
-    return 0;
+	int n = *a;
+	*a = *b;
+	*b = n;
 }
