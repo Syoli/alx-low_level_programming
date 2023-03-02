@@ -1,19 +1,28 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+include "main.h"
+/**
+ * _strcat - concatenates two strings
+ * @dest: input value
+ * @src: input value
+ *
+ * Return: void
+ */
+char *_strcat(char *dest, char *src)
+{
+	int i;
+	int j;
 
-int main() {
-    srand(time(NULL));
-    int n = rand();
-    printf("Last digit of %d is ", n);
-    int last_digit = abs(n) % 10;
-    printf("%d ", last_digit);
-    if (last_digit > 5) {
-        printf("and is greater than 5\n");
-    } else if (last_digit == 0) {
-        printf("and is 0\n");
-    } else {
-        printf("and is less than 6 and not 0\n");
-    }
-    return 0;
+	i = 0;
+	while (dest[i] != '\0')
+	{
+		i++;
+	}
+	j = 0;
+	while (src[j] != '\0')
+	{
+		dest[i] = src[j];
+		i++;
+		j++;
+	}
+	dest[i] = '\0';
+	return (dest);
 }
