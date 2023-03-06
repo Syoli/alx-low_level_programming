@@ -5,7 +5,7 @@
  * * @to: char
 */
 
-void set_string(char **s, char *to)
+int main(void) set_string(char **s, char *to);
 {
 		*s = to;
 }
