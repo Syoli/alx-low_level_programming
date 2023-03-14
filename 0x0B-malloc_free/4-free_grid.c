@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
  * free_grid - allocates a grid, make space and free space
